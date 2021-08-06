@@ -1,129 +1,133 @@
 function Footer() {
     return (
-        <footer className="footer px-32 py-14 bg-gray-100">
+        <footer className="footer p-8 lg:px-32 lg:py-14 bg-gray-100 border-t border-gray-300">
 
-            <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 max-w-screen-2xl mx-auto">
-                <div className="footer__column space-y-4 text-xs text-gray-800">
-                    <h5 className="footer__title font-bold uppercase">About</h5>
+            <div className="container max-w-[1760px] xl:px-20 mx-auto">
+                <div className="footer__wrapper grid grid-cols-1 lg:grid-cols-4 gap-y-8">
 
-                    <ul className="footer__list">
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">How Airbnb works</a>
-                        </li>
+                    <div className="footer__column text-gray-800 border-b-2 lg:border-b-0 pb-6 lg:pb-0">
+                        <h5 className="footer__title text-xs mb-5 font-bold uppercase">About</h5>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Newsroom</a>
-                        </li>
+                        <ul className="footer__list text-sm space-y-2 sm:space-y-0 sm:gap-y-3 sm:grid sm:grid-cols-3 lg:flex lg:flex-col">
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">How Airbnb works</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Investors</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Newsroom</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Airbnb Plus</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Investors</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Airbnb Luxe</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Airbnb Plus</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Airbnb for Work</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Airbnb Luxe</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Careers</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Airbnb for Work</a>
+                            </li>
 
-                    </ul>
-                </div>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Careers</a>
+                            </li>
 
-                <div className="footer__column space-y-4 text-xs text-gray-800">
-                    <h5 className="footer__title font-bold uppercase">Community</h5>
+                        </ul>
+                    </div>
 
-                    <ul className="footer__list">
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Diversity & Belonging</a>
-                        </li>
+                    <div className="footer__column text-gray-800 border-b-2 lg:border-b-0 pb-6 lg:pb-0">
+                        <h5 className="footer__title text-xs mb-5 font-bold uppercase">Community</h5>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Against Discrimination</a>
-                        </li>
+                        <ul className="footer__list text-sm space-y-2 sm:space-y-0 sm:gap-y-3 sm:grid sm:grid-cols-3 lg:flex lg:flex-col">
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Diversity & Belonging</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Accessibility</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Against Discrimination</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Airbnb Associates</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Accessibility</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Guest Referrals</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Airbnb Associates</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Gift Cards</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Guest Referrals</a>
+                            </li>
 
-                    </ul>
-                </div>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Gift Cards</a>
+                            </li>
 
-                <div className="footer__column space-y-4 text-xs text-gray-800">
-                    <h5 className="footer__title font-bold uppercase">Host</h5>
+                        </ul>
+                    </div>
 
-                    <ul className="footer__list">
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Host your home</a>
-                        </li>
+                    <div className="footer__column text-gray-800 border-b-2 lg:border-b-0 pb-6 lg:pb-0">
+                        <h5 className="footer__title text-xs mb-5 font-bold uppercase">Host</h5>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Host an Online Experience</a>
-                        </li>
+                        <ul className="footer__list text-sm space-y-2 sm:space-y-0 sm:gap-y-3 sm:grid sm:grid-cols-3 lg:flex lg:flex-col">
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Host your home</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Host an Experience</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Host an Online Experience</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Responsible hosting</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Host an Experience</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Resource Center</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Responsible hosting</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Community Center</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Resource Center</a>
+                            </li>
 
-                    </ul>
-                </div>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Community Center</a>
+                            </li>
 
-                <div className="footer__column space-y-4 text-xs text-gray-800">
-                    <h5 className="footer__title font-bold uppercase">Support</h5>
+                        </ul>
+                    </div>
 
-                    <ul className="footer__list">
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Our COVID-19 Response</a>
-                        </li>
+                    <div className="footer__column text-gray-800 border-b-2 lg:border-b-0 pb-6 lg:pb-0">
+                        <h5 className="footer__title text-xs mb-5 font-bold uppercase">Support</h5>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Help Center</a>
-                        </li>
+                        <ul className="footer__list text-sm space-y-2 sm:space-y-0 sm:gap-y-3 sm:grid sm:grid-cols-3 lg:flex lg:flex-col">
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Our COVID-19 Response</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Cancellation options</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Help Center</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Neighborhood Support</a>
-                        </li>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Cancellation options</a>
+                            </li>
 
-                        <li className="footer__item">
-                            <a href="#" className="footer__link">Trust & Safety</a>
-                        </li>
-                    </ul>
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Neighborhood Support</a>
+                            </li>
+
+                            <li className="footer__item">
+                                <a href="#" className="footer__link hover:underline hover:text-gray-700 transition-all">Trust & Safety</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 

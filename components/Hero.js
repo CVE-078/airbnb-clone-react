@@ -2,21 +2,19 @@ import Image from 'next/image';
 
 function Hero() {
     return (
-        <section className="hero relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px] transition-all flex items-center justify-center">
+        <section className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[900px] transition-all flex items-center justify-start">
             <Image
-                src="https://links.papareact.com/0fm"
+                src="https://a0.muscache.com/im/pictures/e4a2a61c-589f-4e49-b3b8-968a6bc23389.jpg?im_w=2560"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="bottom"
             />
 
-            <div className="hero__content z-10 flex flex-col items-start justify-center">
-                <p className="hero__text text-md sm:text-3xl font-semibold mb-8">Not sure where to go? Perfect.</p>
+            <div className="z-10 flex flex-col items-start justify-center pl-10 md:pl-20 max-w-[1760px] mx-auto">
+                <p className="text-xl sm:text-6xl font-bold mb-2 text-white w-1/3">Olympian & Paralympian Online Experiences</p>
 
-                <button
-                    className="hero__cta text-purple-500 bg-white rounded-full px-10 py-3 shadow-md hover:shadow-lg active:scale-90 transition-all font-semibold"
-                >
-                    I'm flexible
+                <button className="text-base font-semibold px-5 py-2 rounded-lg mt-5 transition-all active:scale-90 shadow-md hover:shadow-xl bg-white">
+                    Explore now
                 </button>
             </div>
         </section>

@@ -3,10 +3,10 @@ import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon } from '@heroicons/r
 
 function Header() {
     return (
-        <header className="header sticky top-0 z-50 bg-white shadow-md p-4 md:px-10 lg:px-20 transition-all">
+        <header className="sticky top-0 z-50 bg-white shadow-md transition-all">
 
-            <div className="container max-w-screen-2xl w-full flex flex-row mx-auto">
-                <div className="header__logo relative flex flex-1 items-center h-8 cursor-pointer my-auto">
+            <div className="container max-w-[1760px] w-full p-4 md:px-10 lg:px-20 flex flex-row mx-auto">
+                <div className="relative flex flex-1 items-center h-8 cursor-pointer my-auto">
                     <Image
                         src="https://links.papareact.com/qd3"
                         layout="fill"
@@ -15,7 +15,7 @@ function Header() {
                     />
                 </div>
 
-                <div className="header__searchBar flex flex-1 justify-center items-center border-2 bg-gray-50 rounded-full py-1 px-2 shadow-sm hover:shadow-md transition-all">
+                <div className="flex flex-1 justify-center items-center border-2 bg-gray-50 rounded-full py-1 px-2 shadow-sm hover:shadow-md transition-all">
                     <input
                         type="text"
                         name="search"
@@ -27,14 +27,14 @@ function Header() {
                     <SearchIcon className="h-8 w-8 bg-red-400 hover:bg-red-500 text-white rounded-full p-2 cursor-pointer transition-all" />
                 </div>
 
-                <div className="header__navigation flex flex-1 justify-end items-center">
-                    <span className="header__host bg-white hover:bg-gray-100 text-sm font-semibold p-3 rounded-full cursor-pointer transition-all">Become a host</span>
+                <div className="flex flex-1 justify-end items-center">
+                    <span className="bg-white hover:bg-gray-100 text-sm font-semibold p-3 rounded-full cursor-pointer transition-all">Become a host</span>
 
-                    <span className="header__language bg-white hover:bg-gray-100 text-sm font-semibold p-3 rounded-full cursor-pointer transition-all">
+                    <span className="bg-white hover:bg-gray-100 text-sm font-semibold p-3 rounded-full cursor-pointer transition-all">
                         <GlobeAltIcon className="h-5 w-5" />
                     </span>
 
-                    <span className="header__menu border flex flex-row items-center justify-center ml-2 rounded-full p-1 cursor-pointer text-gray-500 hover:shadow-md transition-all">
+                    <span className="border flex flex-row items-center justify-center ml-2 rounded-full p-1 cursor-pointer text-gray-500 hover:shadow-md transition-all">
                         <MenuIcon className="h-5 w-5 mx-2" />
                         <UserCircleIcon className="h-8 w-8" />
                     </span>
