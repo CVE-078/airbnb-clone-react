@@ -7,6 +7,10 @@ import LargeCard from '/components/LargeCard'
 import Banner from '/components/Banner'
 import Footer from '/components/Footer'
 
+import exploreData from '/lib/explore.json'
+import featuresData from '/lib/features.json'
+import discoverData from '/lib/discover.json'
+
 export default function Home({ exploreData, featuresData, discoverData }) {
     return (
         <div className="min-h-screen">
@@ -97,10 +101,6 @@ export default function Home({ exploreData, featuresData, discoverData }) {
 }
 
 export async function getStaticProps() {
-    const exploreData = await fetch('http://localhost:3000/api/explore').then((res) => res.json());
-    const featuresData = await fetch('http://localhost:3000/api/features').then((res) => res.json());
-    const discoverData = await fetch('http://localhost:3000/api/discover').then((res) => res.json());
-
     return {
         props: {
             exploreData,
