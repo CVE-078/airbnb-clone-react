@@ -2,13 +2,13 @@ import Image from 'next/image'
 
 function MediumCard({ image, title }) {
     return (
-        <div class="flex flex-col flex-grow-0 flex-shrink-0 w-[50%] lg:w-[33.33%] 2xl:w-[25%] rounded-xl cursor-pointer">
+        <div className="flex flex-col flex-grow-0 flex-shrink-0 lg:flex-shrink w-[50%] lg:w-[33.33%] 2xl:w-[25%] rounded-xl cursor-pointer">
 
-            <div className="relative h-[100%] pb-[100%] w-full mb-1 transition-all duration-300 ease-out">
+            <div className="group relative h-[100%] pb-[100%] w-full mb-1 transition-all duration-300 ease-out rounded-lg overflow-hidden">
                 <Image
                     src={image}
                     layout="fill"
-                    className="rounded-lg"
+                    className="hover:scale-105 transition-all duration-300"
                 />
             </div>
 
