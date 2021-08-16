@@ -1,20 +1,27 @@
 import Image from 'next/image'
 
-function LargeCard({ image, title, description }) {
+function LargeCard({ img, title, description, buttonText, buttonBgColor = 'bg-gray-900', buttonTextColor = 'text-white', textColor = 'bg-gray-900' }) {
     return (
-        <div className="flex flex-col flex-grow-0 flex-shrink-0 w-[50%] lg:w-[33.33%] rounded-xl cursor-pointer">
+        <div className="group relative cursor-pointer flex items-center justify-start h-[400px] xl:h-[500px] min-w-[300px] rounded-2xl overflow-hidden">
+            <Image
+                src={img}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="group-hover:scale-105 transition-all duration-300"
+            />
 
-            <div className="group relative h-[100%] pb-[100%] w-full mb-2 transition-all duration-300 ease-out rounded-lg overflow-hidden">
-                <Image
-                    src={image}
-                    layout="fill"
-                    className="hover:scale-105 transition-all duration-300"
-                />
-            </div>
+            <div className="z-40 pl-10 md:pl-20 h-full flex flex-col items-start justify-center">
+                <h3 className={"text-3xl md:text-5xl font-semibold mb-3 w-3/4 " + textColor}>{title}</h3>
+                <p className={"w-1/2 text-lg " + textColor}>{description}</p>
 
-            <div className="flex flex-col">
-                <h3 className={"font-medium text-xl"}>{title}</h3>
-                <p className={"text-base"}>{description}</p>
+                <button
+                    className={
+                        "text-base font-semibold px-6 py-3 rounded-lg mt-5 transition-all active:scale-90 shadow-md hover:shadow-xl " + buttonBgColor + " " + buttonTextColor
+                    }
+                >
+                    {buttonText}
+                </button>
             </div>
         </div>
     )
