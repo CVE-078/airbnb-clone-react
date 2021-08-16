@@ -3,19 +3,19 @@ import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon } from '@heroicons/r
 
 function Header() {
     return (
-        <header className="fixed top-0 left-0 right-0 h-[80px] flex items-center z-50 bg-white shadow-md transition-all">
+        <header className="sticky top-0 z-50 bg-white shadow-md transition-all">
 
             <div className="container max-w-[1760px] w-full p-4 md:px-10 lg:px-20 flex flex-row mx-auto">
                 <div className="relative flex flex-1 items-center h-8 cursor-pointer my-auto">
                     <Image
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                        src="https://links.papareact.com/qd3"
                         layout="fill"
                         objectFit="contain"
                         objectPosition="left"
                     />
                 </div>
 
-                <div className="flex flex-grow-0 justify-center items-center border bg-gray-50 rounded-full py-1 px-2 shadow-sm hover:shadow-md transition-all w-[300px]">
+                <div className="flex flex-1 justify-center items-center border-2 bg-gray-50 rounded-full py-1 px-2 shadow-sm hover:shadow-md transition-all">
                     <input
                         type="text"
                         name="search"
